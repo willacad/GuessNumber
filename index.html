@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuessNumber</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/index.js" defer></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Spartan:wght@300&family=Ubuntu:wght@300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <a class="header__link" href="#">
+            <h1 class="title"> Guess Number </h1>
+        </a>
+    </header>
+    <main class="container">
+        <form id="form" class="container__form">
+            <label class="container__label" id for="kick"> Digite um número (0 - 10) </label>
+            <input type="number" class="container__input " id="kick" max="10" placeholder="0">
+
+            <button class="container__btn-start" type="submit">Jogar!</button>
+
+        </form>
+
+        <section class="container__result-box" id="result">
+            <h2 class="container__status" id="status">Adivinhe o número sorteado!</h2>
+            <span class="container__attemp" id="attemp">Tentativas: 0 </span>
+        </section>
+
+        <button class="btn-restart" id="btnrestart" onclick="restart()">Jogar de novo!</button>
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">GuessNumber, 2022 &copy;</p>
+    </footer>
+</body>
+
+</html>
